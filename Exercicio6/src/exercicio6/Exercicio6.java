@@ -1,21 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package exercicio6;
 
-/**
- *
- * @author aluno.saolucas
- */
 public class Exercicio6 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+   
+
+        ProdutoEletronico eletronico = new ProdutoEletronico();
+        ProdutoAlimenticio alimento = new ProdutoAlimenticio();
+
+        // Definindo dados do eletrônico
+        eletronico.setNome("Smartphone");
+        eletronico.setPreco(2500.0);
+        eletronico.setVoltagem(110);
+
+        // Definindo dados do alimento
+        alimento.setNome("Leite");
+        alimento.setPreco(6.50);
+        alimento.setDataValidade("10/04/2026");
+
+        // Exibindo dados do eletrônico
+        System.out.println("Produto Eletrônico:");
+        System.out.println("Nome: " + eletronico.getNome());
+        System.out.println("Preço: R$ " + eletronico.getPreco());
+        System.out.println("Voltagem: " + eletronico.getVoltagem() + "V");
+
+        // Exibindo dados do alimento
+        System.out.println("\nProduto Alimentício:");
+        System.out.println("Nome: " + alimento.getNome());
+        System.out.println("Preço: R$ " + alimento.getPreco());
+        System.out.println("Validade: " + alimento.getDataValidade());
     }
-    
 }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
